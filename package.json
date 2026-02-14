@@ -1,6 +1,6 @@
 {
   "name": "@o.z/utils",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A comprehensive utility library for modern JavaScript/TypeScript development",
   "homepage": "https://github.com/z-npm/utils#readme",
   "docs": "https://github.com/z-npm/utils#readme",
@@ -109,6 +109,21 @@
       "types": "./dist/fetcher/index.d.ts",
       "import": "./dist/fetcher/index.js",
       "require": "./dist/fetcher/index.cjs"
+    },
+    "./dom": {
+      "types": "./dist/dom/index.d.ts",
+      "import": "./dist/dom/index.js",
+      "require": "./dist/dom/index.cjs"
+    },
+    "./dom/html": {
+      "types": "./dist/dom/html.d.ts",
+      "import": "./dist/dom/html.js",
+      "require": "./dist/dom/html.cjs"
+    },
+    "./dom/element": {
+      "types": "./dist/dom/element.d.ts",
+      "import": "./dist/dom/element.js",
+      "require": "./dist/dom/element.cjs"
     },
     "./detect": {
       "types": "./dist/detect/index.d.ts",
