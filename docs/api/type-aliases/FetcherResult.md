@@ -6,7 +6,7 @@
 
 > **FetcherResult**\<`T`\> = `object`
 
-Defined in: [src/lib/fetcher/index.ts:43](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L43)
+Defined in: [src/lib/fetcher/index.ts:43](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L43)
 
 Represents the result of a fetcher operation.
 
@@ -22,7 +22,7 @@ Represents the result of a fetcher operation.
 
 > **success**: `boolean`
 
-Defined in: [src/lib/fetcher/index.ts:47](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L47)
+Defined in: [src/lib/fetcher/index.ts:47](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L47)
 
 Indicates whether the request was successful.
 
@@ -32,7 +32,7 @@ Indicates whether the request was successful.
 
 > `optional` **data**: `T`
 
-Defined in: [src/lib/fetcher/index.ts:52](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L52)
+Defined in: [src/lib/fetcher/index.ts:52](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L52)
 
 The response data if the request was successful.
 
@@ -42,7 +42,7 @@ The response data if the request was successful.
 
 > `optional` **error**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:57](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L57)
+Defined in: [src/lib/fetcher/index.ts:57](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L57)
 
 Error message if the request failed.
 
@@ -52,7 +52,7 @@ Error message if the request failed.
 
 > `optional` **reason**: [`FetcherErrorReason`](FetcherErrorReason.md)
 
-Defined in: [src/lib/fetcher/index.ts:62](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L62)
+Defined in: [src/lib/fetcher/index.ts:62](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L62)
 
 A standardized reason for the failure.
 
@@ -62,7 +62,7 @@ A standardized reason for the failure.
 
 > `optional` **status**: `number`
 
-Defined in: [src/lib/fetcher/index.ts:67](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L67)
+Defined in: [src/lib/fetcher/index.ts:67](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L67)
 
 HTTP status code of the response.
 
@@ -72,7 +72,7 @@ HTTP status code of the response.
 
 > `optional` **statusText**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:72](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L72)
+Defined in: [src/lib/fetcher/index.ts:72](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L72)
 
 HTTP status text of the response.
 
@@ -82,7 +82,7 @@ HTTP status text of the response.
 
 > `optional` **headers**: `Headers`
 
-Defined in: [src/lib/fetcher/index.ts:77](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L77)
+Defined in: [src/lib/fetcher/index.ts:77](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L77)
 
 Response headers.
 
@@ -92,6 +92,6 @@ Response headers.
 
 > `optional` **id**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:82](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L82)
+Defined in: [src/lib/fetcher/index.ts:82](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L82)
 
 The identifier associated with the request.

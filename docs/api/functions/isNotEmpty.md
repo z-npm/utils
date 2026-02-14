@@ -6,7 +6,7 @@
 
 > **isNotEmpty**(`value`): `boolean`
 
-Defined in: [src/lib/validate/index.ts:70](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/validate/index.ts#L70)
+Defined in: [src/lib/validate/index.ts:70](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/validate/index.ts#L70)
 
 Validates that a value is not empty.
 

@@ -6,7 +6,7 @@
 
 > `const` **isBrowser**: `boolean`
 
-Defined in: [src/lib/detect/index.ts:23](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/detect/index.ts#L23)
+Defined in: [src/lib/detect/index.ts:23](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/detect/index.ts#L23)
 
 Detects if the code is running in a browser environment.
 

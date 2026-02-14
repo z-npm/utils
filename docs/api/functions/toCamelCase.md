@@ -6,7 +6,7 @@
 
 > **toCamelCase**(`str`): `string`
 
-Defined in: [src/lib/string/index.ts:54](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/string/index.ts#L54)
+Defined in: [src/lib/string/index.ts:54](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/string/index.ts#L54)
 
 Converts a string to camelCase.
 

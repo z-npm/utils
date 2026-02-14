@@ -4,7 +4,7 @@
 
 # Interface: FetcherOptions
 
-Defined in: [src/lib/fetcher/index.ts:18](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L18)
+Defined in: [src/lib/fetcher/index.ts:18](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L18)
 
 Options for configuring the fetcher function.
 
@@ -18,7 +18,7 @@ Options for configuring the fetcher function.
 
 > **url**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L22)
+Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L22)
 
 The URL to send the request to.
 
@@ -28,7 +28,7 @@ The URL to send the request to.
 
 > `optional` **id**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L27)
+Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L27)
 
 Optional identifier for the request.
 
@@ -38,7 +38,7 @@ Optional identifier for the request.
 
 > `optional` **responseType**: `"text"` \| `"json"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L32)
+Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L32)
 
 The expected response type. Defaults to 'json'.
 
@@ -48,7 +48,7 @@ The expected response type. Defaults to 'json'.
 
 > `optional` **timeout**: `number`
 
-Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/38c27c144e95626db9890e7e563d40a2f8155b8b/src/lib/fetcher/index.ts#L37)
+Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L37)
 
 Request timeout in milliseconds. Defaults to 10000ms.
 
