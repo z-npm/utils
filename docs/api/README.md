@@ -12,6 +12,10 @@ Includes helpers for string manipulation, browser detection, and reactive progra
 ## Other
 
 - [isBrowser](variables/isBrowser.md)
+- [createElement](functions/createElement.md)
+- [SafeHTML](classes/SafeHTML.md)
+- [html](functions/html.md)
+- [unsafeHTML](functions/unsafeHTML.md)
 - [FetcherErrorReason](type-aliases/FetcherErrorReason.md)
 - [FetcherOptions](interfaces/FetcherOptions.md)
 - [FetcherResult](type-aliases/FetcherResult.md)
@@ -23,6 +27,8 @@ Includes helpers for string manipulation, browser detection, and reactive progra
 - [del](functions/del.md)
 - [batchFetch](functions/batchFetch.md)
 - [delay](functions/delay.md)
+- [FetchWorkerOptions](interfaces/FetchWorkerOptions.md)
+- [fetchWorker](functions/fetchWorker.md)
 
 ## Reactivity
 

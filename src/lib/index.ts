@@ -5,9 +5,12 @@
  * @module utilities
  */
 
-export * from "./task"
-export * from "./fetcher"
 export * from "./detect"
+export * from "./dom"
+export * from "./fetcher"
 export * from "./proxy"
 export * from "./string"
+export * from "./task"
 export * from "./validate"
+export * from "./worker"
+

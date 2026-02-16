@@ -2,15 +2,13 @@
 
 ***
 
-# Interface: FetcherOptions
+# Interface: FetchWorkerOptions
 
-Defined in: [src/lib/fetcher/index.ts:18](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/fetcher/index.ts#L18)
-
-Options for configuring the fetcher function.
+Defined in: src/lib/worker/fetchWorker/index.ts:3
 
 ## Extends
 
-- `RequestInit`
+- `FetcherOptions`
 
 ## Properties
 
@@ -18,9 +16,13 @@ Options for configuring the fetcher function.
 
 > **url**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/fetcher/index.ts#L22)
+Defined in: dist/fetcher/index.d.ts:12
 
 The URL to send the request to.
+
+#### Inherited from
+
+`FetcherOptions.url`
 
 ***
 
@@ -28,9 +30,13 @@ The URL to send the request to.
 
 > `optional` **id**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/fetcher/index.ts#L27)
+Defined in: dist/fetcher/index.d.ts:16
 
 Optional identifier for the request.
+
+#### Inherited from
+
+`FetcherOptions.id`
 
 ***
 
@@ -38,9 +44,13 @@ Optional identifier for the request.
 
 > `optional` **responseType**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/fetcher/index.ts#L32)
+Defined in: dist/fetcher/index.d.ts:20
 
 The expected response type. Defaults to 'json'.
+
+#### Inherited from
+
+`FetcherOptions.responseType`
 
 ***
 
@@ -48,9 +58,13 @@ The expected response type. Defaults to 'json'.
 
 > `optional` **timeout**: `number`
 
-Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/fetcher/index.ts#L37)
+Defined in: dist/fetcher/index.d.ts:24
 
 Request timeout in milliseconds. Defaults to 10000ms.
+
+#### Inherited from
+
+`FetcherOptions.timeout`
 
 ***
 
@@ -64,7 +78,7 @@ A BodyInit object or null to set request's body.
 
 #### Inherited from
 
-`RequestInit.body`
+`FetcherOptions.body`
 
 ***
 
@@ -78,7 +92,7 @@ A string indicating how the request will interact with the browser's cache to se
 
 #### Inherited from
 
-`RequestInit.cache`
+`FetcherOptions.cache`
 
 ***
 
@@ -92,7 +106,7 @@ A string indicating whether credentials will be sent with the request always, ne
 
 #### Inherited from
 
-`RequestInit.credentials`
+`FetcherOptions.credentials`
 
 ***
 
@@ -106,7 +120,7 @@ A Headers object, an object literal, or an array of two-item arrays to set reque
 
 #### Inherited from
 
-`RequestInit.headers`
+`FetcherOptions.headers`
 
 ***
 
@@ -120,7 +134,7 @@ A cryptographic hash of the resource to be fetched by request. Sets request's in
 
 #### Inherited from
 
-`RequestInit.integrity`
+`FetcherOptions.integrity`
 
 ***
 
@@ -134,7 +148,7 @@ A boolean to set request's keepalive.
 
 #### Inherited from
 
-`RequestInit.keepalive`
+`FetcherOptions.keepalive`
 
 ***
 
@@ -148,7 +162,7 @@ A string to set request's method.
 
 #### Inherited from
 
-`RequestInit.method`
+`FetcherOptions.method`
 
 ***
 
@@ -162,7 +176,7 @@ A string to indicate whether the request will use CORS, or will be restricted to
 
 #### Inherited from
 
-`RequestInit.mode`
+`FetcherOptions.mode`
 
 ***
 
@@ -174,7 +188,7 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2056
 
 #### Inherited from
 
-`RequestInit.priority`
+`FetcherOptions.priority`
 
 ***
 
@@ -188,7 +202,7 @@ A string indicating whether request follows redirects, results in an error upon 
 
 #### Inherited from
 
-`RequestInit.redirect`
+`FetcherOptions.redirect`
 
 ***
 
@@ -202,7 +216,7 @@ A string whose value is a same-origin URL, "about:client", or the empty string, 
 
 #### Inherited from
 
-`RequestInit.referrer`
+`FetcherOptions.referrer`
 
 ***
 
@@ -216,7 +230,7 @@ A referrer policy to set request's referrerPolicy.
 
 #### Inherited from
 
-`RequestInit.referrerPolicy`
+`FetcherOptions.referrerPolicy`
 
 ***
 
@@ -230,7 +244,7 @@ An AbortSignal to set request's signal.
 
 #### Inherited from
 
-`RequestInit.signal`
+`FetcherOptions.signal`
 
 ***
 
@@ -244,4 +258,4 @@ Can only be null. Used to disassociate request from any Window.
 
 #### Inherited from
 
-`RequestInit.window`
+`FetcherOptions.window`

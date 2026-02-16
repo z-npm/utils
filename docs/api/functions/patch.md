@@ -6,7 +6,7 @@
 
 > **patch**\<`T`\>(`url`, `body?`, `options?`): `Promise`\<[`FetcherResult`](../type-aliases/FetcherResult.md)\<`T`\>\>
 
-Defined in: [src/lib/fetcher/index.ts:295](https://github.com/z-npm/utils/blob/9861d2ac357ab46d57a0b585ad9bae869c08517b/src/lib/fetcher/index.ts#L295)
+Defined in: [src/lib/fetcher/index.ts:295](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/fetcher/index.ts#L295)
 
 Performs an HTTP PATCH request.
 
