@@ -4,11 +4,13 @@
 
 # Interface: FetchWorkerOptions
 
-Defined in: src/lib/worker/fetchWorker/index.ts:3
+Defined in: [src/lib/worker/fetchWorker/index.ts:3](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/worker/fetchWorker/index.ts#L3)
+
+Options for configuring the fetcher function.
 
 ## Extends
 
-- `FetcherOptions`
+- [`FetcherOptions`](FetcherOptions.md)
 
 ## Properties
 
@@ -16,13 +18,13 @@ Defined in: src/lib/worker/fetchWorker/index.ts:3
 
 > **url**: `string`
 
-Defined in: dist/fetcher/index.d.ts:12
+Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L22)
 
 The URL to send the request to.
 
 #### Inherited from
 
-`FetcherOptions.url`
+[`FetcherOptions`](FetcherOptions.md).[`url`](FetcherOptions.md#url)
 
 ***
 
@@ -30,13 +32,13 @@ The URL to send the request to.
 
 > `optional` **id**: `string`
 
-Defined in: dist/fetcher/index.d.ts:16
+Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L27)
 
 Optional identifier for the request.
 
 #### Inherited from
 
-`FetcherOptions.id`
+[`FetcherOptions`](FetcherOptions.md).[`id`](FetcherOptions.md#id)
 
 ***
 
@@ -44,13 +46,13 @@ Optional identifier for the request.
 
 > `optional` **responseType**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: dist/fetcher/index.d.ts:20
+Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L32)
 
 The expected response type. Defaults to 'json'.
 
 #### Inherited from
 
-`FetcherOptions.responseType`
+[`FetcherOptions`](FetcherOptions.md).[`responseType`](FetcherOptions.md#responsetype)
 
 ***
 
@@ -58,13 +60,13 @@ The expected response type. Defaults to 'json'.
 
 > `optional` **timeout**: `number`
 
-Defined in: dist/fetcher/index.d.ts:24
+Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L37)
 
 Request timeout in milliseconds. Defaults to 10000ms.
 
 #### Inherited from
 
-`FetcherOptions.timeout`
+[`FetcherOptions`](FetcherOptions.md).[`timeout`](FetcherOptions.md#timeout)
 
 ***
 
@@ -78,7 +80,7 @@ A BodyInit object or null to set request's body.
 
 #### Inherited from
 
-`FetcherOptions.body`
+[`FetcherOptions`](FetcherOptions.md).[`body`](FetcherOptions.md#body)
 
 ***
 
@@ -92,7 +94,7 @@ A string indicating how the request will interact with the browser's cache to se
 
 #### Inherited from
 
-`FetcherOptions.cache`
+[`FetcherOptions`](FetcherOptions.md).[`cache`](FetcherOptions.md#cache)
 
 ***
 
@@ -106,7 +108,7 @@ A string indicating whether credentials will be sent with the request always, ne
 
 #### Inherited from
 
-`FetcherOptions.credentials`
+[`FetcherOptions`](FetcherOptions.md).[`credentials`](FetcherOptions.md#credentials)
 
 ***
 
@@ -120,7 +122,7 @@ A Headers object, an object literal, or an array of two-item arrays to set reque
 
 #### Inherited from
 
-`FetcherOptions.headers`
+[`FetcherOptions`](FetcherOptions.md).[`headers`](FetcherOptions.md#headers)
 
 ***
 
@@ -134,7 +136,7 @@ A cryptographic hash of the resource to be fetched by request. Sets request's in
 
 #### Inherited from
 
-`FetcherOptions.integrity`
+[`FetcherOptions`](FetcherOptions.md).[`integrity`](FetcherOptions.md#integrity)
 
 ***
 
@@ -148,7 +150,7 @@ A boolean to set request's keepalive.
 
 #### Inherited from
 
-`FetcherOptions.keepalive`
+[`FetcherOptions`](FetcherOptions.md).[`keepalive`](FetcherOptions.md#keepalive)
 
 ***
 
@@ -162,7 +164,7 @@ A string to set request's method.
 
 #### Inherited from
 
-`FetcherOptions.method`
+[`FetcherOptions`](FetcherOptions.md).[`method`](FetcherOptions.md#method)
 
 ***
 
@@ -176,7 +178,7 @@ A string to indicate whether the request will use CORS, or will be restricted to
 
 #### Inherited from
 
-`FetcherOptions.mode`
+[`FetcherOptions`](FetcherOptions.md).[`mode`](FetcherOptions.md#mode)
 
 ***
 
@@ -188,7 +190,7 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2056
 
 #### Inherited from
 
-`FetcherOptions.priority`
+[`FetcherOptions`](FetcherOptions.md).[`priority`](FetcherOptions.md#priority)
 
 ***
 
@@ -202,7 +204,7 @@ A string indicating whether request follows redirects, results in an error upon 
 
 #### Inherited from
 
-`FetcherOptions.redirect`
+[`FetcherOptions`](FetcherOptions.md).[`redirect`](FetcherOptions.md#redirect)
 
 ***
 
@@ -216,7 +218,7 @@ A string whose value is a same-origin URL, "about:client", or the empty string, 
 
 #### Inherited from
 
-`FetcherOptions.referrer`
+[`FetcherOptions`](FetcherOptions.md).[`referrer`](FetcherOptions.md#referrer)
 
 ***
 
@@ -230,7 +232,7 @@ A referrer policy to set request's referrerPolicy.
 
 #### Inherited from
 
-`FetcherOptions.referrerPolicy`
+[`FetcherOptions`](FetcherOptions.md).[`referrerPolicy`](FetcherOptions.md#referrerpolicy)
 
 ***
 
@@ -244,7 +246,7 @@ An AbortSignal to set request's signal.
 
 #### Inherited from
 
-`FetcherOptions.signal`
+[`FetcherOptions`](FetcherOptions.md).[`signal`](FetcherOptions.md#signal)
 
 ***
 
@@ -258,4 +260,4 @@ Can only be null. Used to disassociate request from any Window.
 
 #### Inherited from
 
-`FetcherOptions.window`
+[`FetcherOptions`](FetcherOptions.md).[`window`](FetcherOptions.md#window)

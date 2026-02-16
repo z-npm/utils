@@ -6,7 +6,7 @@
 
 > **isValidEmail**(`email`): `boolean`
 
-Defined in: [src/lib/validate/index.ts:43](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/validate/index.ts#L43)
+Defined in: [src/lib/validate/index.ts:43](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/validate/index.ts#L43)
 
 Validates email address.
 

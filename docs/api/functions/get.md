@@ -6,7 +6,7 @@
 
 > **get**\<`T`\>(`url`, `options?`): `Promise`\<[`FetcherResult`](../type-aliases/FetcherResult.md)\<`T`\>\>
 
-Defined in: [src/lib/fetcher/index.ts:261](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/fetcher/index.ts#L261)
+Defined in: [src/lib/fetcher/index.ts:261](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L261)
 
 Performs an HTTP GET request.
 

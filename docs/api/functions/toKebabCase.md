@@ -6,7 +6,7 @@
 
 > **toKebabCase**(`str`): `string`
 
-Defined in: [src/lib/string/index.ts:28](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/string/index.ts#L28)
+Defined in: [src/lib/string/index.ts:28](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/string/index.ts#L28)
 
 Converts a camelCase or PascalCase string to kebab-case.
 

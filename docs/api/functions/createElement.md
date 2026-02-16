@@ -6,7 +6,7 @@
 
 > **createElement**\<`K`\>(`tagName`, `styles?`, `children?`): `HTMLElementTagNameMap`\[`K`\]
 
-Defined in: [src/lib/dom/element.ts:45](https://github.com/z-npm/utils/blob/ba4c25d7a511757633063ce2d47c6306f136a936/src/lib/dom/element.ts#L45)
+Defined in: [src/lib/dom/element.ts:45](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/dom/element.ts#L45)
 
 Creates an HTML element with type-safe styles and children.
                                                             * This utility provides a functional alternative to template literals or JSX,                                               * with full TypeScript support for CSS properties and element types.                                                        *                                                             *

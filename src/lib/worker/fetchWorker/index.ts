@@ -1,4 +1,4 @@
-import { FetcherOptions, FetcherResult } from "@o.z/utils";
+import { FetcherOptions, FetcherResult } from "../../fetcher";
 
 export interface FetchWorkerOptions extends FetcherOptions { }
 
