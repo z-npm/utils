@@ -6,7 +6,7 @@
 
 > **makeReactive**\<`T`\>(`target`, `onChange`, `proxyCache?`): `T`
 
-Defined in: [src/lib/proxy/index.ts:45](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/proxy/index.ts#L45)
+Defined in: [src/lib/proxy/index.ts:45](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/proxy/index.ts#L45)
 
 Creates a reactive proxy for an object that triggers callbacks on mutations.
 

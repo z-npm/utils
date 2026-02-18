@@ -4,7 +4,7 @@
 
 # Class: SafeHTML
 
-Defined in: [src/lib/dom/html.ts:21](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/dom/html.ts#L21)
+Defined in: [src/lib/dom/html.ts:21](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/dom/html.ts#L21)
 
 A wrapper class to mark strings as "safe" (already sanitized or trusted).
                                                             *  SafeHTML
@@ -23,7 +23,7 @@ A wrapper class to mark strings as "safe" (already sanitized or trusted).
 
 > **new SafeHTML**(`value`): `SafeHTML`
 
-Defined in: [src/lib/dom/html.ts:25](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/dom/html.ts#L25)
+Defined in: [src/lib/dom/html.ts:25](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/dom/html.ts#L25)
 
 Creates a SafeHTML instance.                                *
 
@@ -45,7 +45,7 @@ HTML string that is already sanitized or trusted
 
 > `readonly` **value**: `string`
 
-Defined in: [src/lib/dom/html.ts:25](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/dom/html.ts#L25)
+Defined in: [src/lib/dom/html.ts:25](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/dom/html.ts#L25)
 
 The safe HTML string
 
@@ -55,7 +55,7 @@ The safe HTML string
 
 > **toString**(): `string`
 
-Defined in: [src/lib/dom/html.ts:31](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/dom/html.ts#L31)
+Defined in: [src/lib/dom/html.ts:31](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/dom/html.ts#L31)
 
 Returns the safe HTML string.
 

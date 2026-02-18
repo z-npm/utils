@@ -6,7 +6,7 @@
 
 > **truncate**(`str`, `length`, `suffix?`): `string`
 
-Defined in: [src/lib/string/index.ts:102](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/string/index.ts#L102)
+Defined in: [src/lib/string/index.ts:102](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/string/index.ts#L102)
 
 Truncates a string to a specified length.
 

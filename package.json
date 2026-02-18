@@ -1,6 +1,6 @@
 {
   "name": "@o.z/utils",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A comprehensive utility library for modern JavaScript/TypeScript development",
   "homepage": "https://github.com/z-npm/utils#readme",
   "docs": "https://github.com/z-npm/utils#readme",
@@ -65,8 +65,8 @@
     "@types/node": "^25.2.3",
     "@vitest/coverage-v8": "^4.0.18",
     "@vitest/ui": "^4.0.18",
-    "glob": "^13.0.3",
-    "jsdom": "^28.0.0",
+    "glob": "^13.0.5",
+    "jsdom": "^28.1.0",
     "sass": "^1.97.3",
     "typedoc": "^0.28.17",
     "typedoc-plugin-markdown": "^4.10.0",

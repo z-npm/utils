@@ -4,7 +4,7 @@
 
 # Interface: FetchWorkerOptions
 
-Defined in: [src/lib/worker/fetchWorker/index.ts:3](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/worker/fetchWorker/index.ts#L3)
+Defined in: [src/lib/worker/fetchWorker/index.ts:4](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/worker/fetchWorker/index.ts#L4)
 
 Options for configuring the fetcher function.
 
@@ -18,7 +18,7 @@ Options for configuring the fetcher function.
 
 > **url**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L22)
+Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L22)
 
 The URL to send the request to.
 
@@ -32,7 +32,7 @@ The URL to send the request to.
 
 > `optional` **id**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L27)
+Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L27)
 
 Optional identifier for the request.
 
@@ -46,7 +46,7 @@ Optional identifier for the request.
 
 > `optional` **responseType**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L32)
+Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L32)
 
 The expected response type. Defaults to 'json'.
 
@@ -60,7 +60,7 @@ The expected response type. Defaults to 'json'.
 
 > `optional` **timeout**: `number`
 
-Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/e5546f72087a52e3f136b3f63e0b9402a59d5a7f/src/lib/fetcher/index.ts#L37)
+Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L37)
 
 Request timeout in milliseconds. Defaults to 10000ms.
 

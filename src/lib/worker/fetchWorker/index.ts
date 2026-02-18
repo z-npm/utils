@@ -1,3 +1,4 @@
+import FetchWorker from './fetcher.worker?worker&inline';
 import { FetcherOptions, FetcherResult } from "../../fetcher";
 
 export interface FetchWorkerOptions extends FetcherOptions { }
@@ -12,12 +13,9 @@ export interface FetchWorkerOptions extends FetcherOptions { }
  */
 export const fetchWorker = <T = unknown>(options: FetchWorkerOptions): Promise<FetcherResult<T>> => {
   return new Promise((resolve, reject) => {
-    let worker: Worker;
 
     try {
-      worker = new Worker(new URL('./fetcher.worker', import.meta.url), {
-        type: 'module'
-      });
+      const worker = new FetchWorker()
 
       worker.onmessage = (event: MessageEvent<FetcherResult<T>>) => {
         const result = event.data;
