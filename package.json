@@ -1,6 +1,6 @@
 {
   "name": "@o.z/utils",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A comprehensive utility library for modern JavaScript/TypeScript development",
   "homepage": "https://github.com/z-npm/utils#readme",
   "docs": "https://github.com/z-npm/utils#readme",
@@ -84,21 +84,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./worker": {
-      "types": "./dist/worker/index.d.ts",
-      "import": "./dist/worker/index.js",
-      "require": "./dist/worker/index.cjs"
-    },
-    "./fetchWorker": {
-      "types": "./dist/worker/fetchWorker/index.d.ts",
-      "import": "./dist/worker/fetchWorker/index.js",
-      "require": "./dist/worker/fetchWorker/index.cjs"
-    },
-    "./worker/fetchWorker/fetcher.worker.js": {
-      "types": "./dist/worker/fetchWorker/fetcher.worker.js.d.ts",
-      "import": "./dist/worker/fetchWorker/fetcher.worker.js.js",
-      "require": "./dist/worker/fetchWorker/fetcher.worker.js.cjs"
     },
     "./validate": {
       "types": "./dist/validate/index.d.ts",

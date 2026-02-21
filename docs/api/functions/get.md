@@ -4,9 +4,9 @@
 
 # Function: get()
 
-> **get**\<`T`\>(`url`, `options?`): `Promise`\<[`FetcherResult`](../type-aliases/FetcherResult.md)\<`T`\>\>
+> **get**\<`T`\>(`url`, `options?`): `Promise`\<`FetchFnResult`\<`T`\>\>
 
-Defined in: [src/lib/fetcher/index.ts:261](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L261)
+Defined in: [src/lib/fetcher/index.ts:132](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L132)
 
 Performs an HTTP GET request.
 
@@ -28,12 +28,12 @@ The URL to send the request to.
 
 ### options?
 
-`Omit`\<[`FetcherOptions`](../interfaces/FetcherOptions.md), `"url"` \| `"method"`\>
+`Omit`\<`FetchFnOptions`, `"url"` \| `"method"`\>
 
 Additional options for the request.
 
 ## Returns
 
-`Promise`\<[`FetcherResult`](../type-aliases/FetcherResult.md)\<`T`\>\>
+`Promise`\<`FetchFnResult`\<`T`\>\>
 
 A promise resolving to a FetcherResult object.

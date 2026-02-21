@@ -1,10 +1,10 @@
-import { fetcher } from "../../fetcher"
+import { fetchFn } from "./_fetchFn"
 
 self.onmessage = async (event) => {
   const options = event.data;
 
   try {
-    const response = await fetcher(options)
+    const response = await fetchFn(options)
 
     self.postMessage(response);
   } catch (error) {

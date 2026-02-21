@@ -4,9 +4,9 @@
 
 # Function: patch()
 
-> **patch**\<`T`\>(`url`, `body?`, `options?`): `Promise`\<[`FetcherResult`](../type-aliases/FetcherResult.md)\<`T`\>\>
+> **patch**\<`T`\>(`url`, `body?`, `options?`): `Promise`\<`FetchFnResult`\<`T`\>\>
 
-Defined in: [src/lib/fetcher/index.ts:295](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L295)
+Defined in: [src/lib/fetcher/index.ts:166](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L166)
 
 Performs an HTTP PATCH request.
 
@@ -34,12 +34,12 @@ The request body.
 
 ### options?
 
-`Omit`\<[`FetcherOptions`](../interfaces/FetcherOptions.md), `"body"` \| `"url"` \| `"method"`\>
+`Omit`\<`FetchFnOptions`, `"body"` \| `"url"` \| `"method"`\>
 
 Additional options for the request.
 
 ## Returns
 
-`Promise`\<[`FetcherResult`](../type-aliases/FetcherResult.md)\<`T`\>\>
+`Promise`\<`FetchFnResult`\<`T`\>\>
 
 A promise resolving to a FetcherResult object.

@@ -2,19 +2,19 @@
 
 ***
 
-# Interface: FetcherOptions
+# Interface: FetcherOptions\<T\>
 
-Defined in: [src/lib/fetcher/index.ts:18](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L18)
-
-Options for configuring the fetcher function.
+Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L22)
 
 ## Extends
 
-- `RequestInit`
+- `FetchFnOptions`
 
-## Extended by
+## Type Parameters
 
-- [`FetchWorkerOptions`](FetchWorkerOptions.md)
+### T
+
+`T` = `unknown`
 
 ## Properties
 
@@ -22,9 +22,13 @@ Options for configuring the fetcher function.
 
 > **url**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L22)
+Defined in: src/lib/fetcher/\_fetchFn.ts:22
 
 The URL to send the request to.
+
+#### Inherited from
+
+`FetchFnOptions.url`
 
 ***
 
@@ -32,9 +36,13 @@ The URL to send the request to.
 
 > `optional` **id**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L27)
+Defined in: src/lib/fetcher/\_fetchFn.ts:27
 
 Optional identifier for the request.
+
+#### Inherited from
+
+`FetchFnOptions.id`
 
 ***
 
@@ -42,9 +50,13 @@ Optional identifier for the request.
 
 > `optional` **responseType**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L32)
+Defined in: src/lib/fetcher/\_fetchFn.ts:32
 
 The expected response type. Defaults to 'json'.
+
+#### Inherited from
+
+`FetchFnOptions.responseType`
 
 ***
 
@@ -52,9 +64,79 @@ The expected response type. Defaults to 'json'.
 
 > `optional` **timeout**: `number`
 
-Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/4c585099c22c301e6f16c53db2101e869bb6f0fa/src/lib/fetcher/index.ts#L37)
+Defined in: src/lib/fetcher/\_fetchFn.ts:37
 
 Request timeout in milliseconds. Defaults to 10000ms.
+
+#### Inherited from
+
+`FetchFnOptions.timeout`
+
+***
+
+### onSuccess()?
+
+> `optional` **onSuccess**: (`result`) => `void`
+
+Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L27)
+
+Callback triggered when the request succeeds
+
+#### Parameters
+
+##### result
+
+`FetchFnResult`\<`T`\>
+
+The successful FetcherResult
+
+#### Returns
+
+`void`
+
+***
+
+### onError()?
+
+> `optional` **onError**: (`error`) => `void`
+
+Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L32)
+
+Callback triggered when the request fails
+
+#### Parameters
+
+##### error
+
+[`FetcherError`](FetcherError.md)
+
+The error details
+
+#### Returns
+
+`void`
+
+***
+
+### onLoadingChange()?
+
+> `optional` **onLoadingChange**: (`isLoading`) => `void`
+
+Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L37)
+
+Callback triggered when loading state changes
+
+#### Parameters
+
+##### isLoading
+
+`boolean`
+
+Current loading state
+
+#### Returns
+
+`void`
 
 ***
 
@@ -68,7 +150,7 @@ A BodyInit object or null to set request's body.
 
 #### Inherited from
 
-`RequestInit.body`
+`FetchFnOptions.body`
 
 ***
 
@@ -82,7 +164,7 @@ A string indicating how the request will interact with the browser's cache to se
 
 #### Inherited from
 
-`RequestInit.cache`
+`FetchFnOptions.cache`
 
 ***
 
@@ -96,7 +178,7 @@ A string indicating whether credentials will be sent with the request always, ne
 
 #### Inherited from
 
-`RequestInit.credentials`
+`FetchFnOptions.credentials`
 
 ***
 
@@ -110,7 +192,7 @@ A Headers object, an object literal, or an array of two-item arrays to set reque
 
 #### Inherited from
 
-`RequestInit.headers`
+`FetchFnOptions.headers`
 
 ***
 
@@ -124,7 +206,7 @@ A cryptographic hash of the resource to be fetched by request. Sets request's in
 
 #### Inherited from
 
-`RequestInit.integrity`
+`FetchFnOptions.integrity`
 
 ***
 
@@ -138,7 +220,7 @@ A boolean to set request's keepalive.
 
 #### Inherited from
 
-`RequestInit.keepalive`
+`FetchFnOptions.keepalive`
 
 ***
 
@@ -152,7 +234,7 @@ A string to set request's method.
 
 #### Inherited from
 
-`RequestInit.method`
+`FetchFnOptions.method`
 
 ***
 
@@ -166,7 +248,7 @@ A string to indicate whether the request will use CORS, or will be restricted to
 
 #### Inherited from
 
-`RequestInit.mode`
+`FetchFnOptions.mode`
 
 ***
 
@@ -178,7 +260,7 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2056
 
 #### Inherited from
 
-`RequestInit.priority`
+`FetchFnOptions.priority`
 
 ***
 
@@ -192,7 +274,7 @@ A string indicating whether request follows redirects, results in an error upon 
 
 #### Inherited from
 
-`RequestInit.redirect`
+`FetchFnOptions.redirect`
 
 ***
 
@@ -206,7 +288,7 @@ A string whose value is a same-origin URL, "about:client", or the empty string, 
 
 #### Inherited from
 
-`RequestInit.referrer`
+`FetchFnOptions.referrer`
 
 ***
 
@@ -220,7 +302,7 @@ A referrer policy to set request's referrerPolicy.
 
 #### Inherited from
 
-`RequestInit.referrerPolicy`
+`FetchFnOptions.referrerPolicy`
 
 ***
 
@@ -234,7 +316,7 @@ An AbortSignal to set request's signal.
 
 #### Inherited from
 
-`RequestInit.signal`
+`FetchFnOptions.signal`
 
 ***
 
@@ -248,4 +330,4 @@ Can only be null. Used to disassociate request from any Window.
 
 #### Inherited from
 
-`RequestInit.window`
+`FetchFnOptions.window`

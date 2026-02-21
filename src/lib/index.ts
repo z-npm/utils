@@ -12,5 +12,4 @@ export * from "./proxy"
 export * from "./string"
 export * from "./task"
 export * from "./validate"
-export * from "./worker"
 
