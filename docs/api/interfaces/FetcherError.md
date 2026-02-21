@@ -4,7 +4,7 @@
 
 # Interface: FetcherError
 
-Defined in: [src/lib/fetcher/index.ts:7](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L7)
+Defined in: [src/lib/fetcher/index.ts:7](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L7)
 
 Unified error type for all fetcher error scenarios
 
@@ -14,7 +14,7 @@ Unified error type for all fetcher error scenarios
 
 > **error**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:9](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L9)
+Defined in: [src/lib/fetcher/index.ts:9](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L9)
 
 Error message
 
@@ -24,7 +24,7 @@ Error message
 
 > `optional` **reason**: `FetchFnErrorReason` \| `"worker-error"` \| `"initialization-error"`
 
-Defined in: [src/lib/fetcher/index.ts:11](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L11)
+Defined in: [src/lib/fetcher/index.ts:11](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L11)
 
 Standardized reason for the failure
 
@@ -34,7 +34,7 @@ Standardized reason for the failure
 
 > `optional` **status**: `number`
 
-Defined in: [src/lib/fetcher/index.ts:13](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L13)
+Defined in: [src/lib/fetcher/index.ts:13](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L13)
 
 HTTP status code (if applicable)
 
@@ -44,7 +44,7 @@ HTTP status code (if applicable)
 
 > `optional` **statusText**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:15](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L15)
+Defined in: [src/lib/fetcher/index.ts:15](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L15)
 
 HTTP status text (if applicable)
 
@@ -54,7 +54,7 @@ HTTP status text (if applicable)
 
 > `optional` **headers**: `Headers`
 
-Defined in: [src/lib/fetcher/index.ts:17](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L17)
+Defined in: [src/lib/fetcher/index.ts:17](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L17)
 
 Response headers (if applicable)
 
@@ -64,6 +64,6 @@ Response headers (if applicable)
 
 > `optional` **id**: `string`
 
-Defined in: [src/lib/fetcher/index.ts:19](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L19)
+Defined in: [src/lib/fetcher/index.ts:19](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L19)
 
 Request identifier (if applicable)

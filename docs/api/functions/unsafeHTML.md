@@ -6,7 +6,7 @@
 
 > **unsafeHTML**(`str`): [`SafeHTML`](../classes/SafeHTML.md)
 
-Defined in: [src/lib/dom/html.ts:148](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/dom/html.ts#L148)
+Defined in: [src/lib/dom/html.ts:148](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/dom/html.ts#L148)
 
 An escape hatch to treat a string as safe HTML without escaping.
 

@@ -1,5 +1,5 @@
 import FetchWorker from "./_fetcher.worker?worker&inline"
-import { FetchFnErrorReason, FetchFnOptions, FetchFnResult } from "./_fetchFn"
+import { FetchFnErrorReason, FetchFnOptions, FetchFnResult } from "./fetchFn"
 
 /**
  * Unified error type for all fetcher error scenarios

@@ -1,4 +1,4 @@
-import { fetchFn } from "./_fetchFn"
+import { fetchFn } from "./fetchFn"
 
 self.onmessage = async (event) => {
   const options = event.data;

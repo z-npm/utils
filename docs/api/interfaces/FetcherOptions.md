@@ -4,7 +4,7 @@
 
 # Interface: FetcherOptions\<T\>
 
-Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L22)
+Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L22)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/1c
 
 > **url**: `string`
 
-Defined in: src/lib/fetcher/\_fetchFn.ts:22
+Defined in: [src/lib/fetcher/fetchFn.ts:22](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/fetchFn.ts#L22)
 
 The URL to send the request to.
 
@@ -36,7 +36,7 @@ The URL to send the request to.
 
 > `optional` **id**: `string`
 
-Defined in: src/lib/fetcher/\_fetchFn.ts:27
+Defined in: [src/lib/fetcher/fetchFn.ts:27](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/fetchFn.ts#L27)
 
 Optional identifier for the request.
 
@@ -50,7 +50,7 @@ Optional identifier for the request.
 
 > `optional` **responseType**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: src/lib/fetcher/\_fetchFn.ts:32
+Defined in: [src/lib/fetcher/fetchFn.ts:32](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/fetchFn.ts#L32)
 
 The expected response type. Defaults to 'json'.
 
@@ -64,7 +64,7 @@ The expected response type. Defaults to 'json'.
 
 > `optional` **timeout**: `number`
 
-Defined in: src/lib/fetcher/\_fetchFn.ts:37
+Defined in: [src/lib/fetcher/fetchFn.ts:37](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/fetchFn.ts#L37)
 
 Request timeout in milliseconds. Defaults to 10000ms.
 
@@ -78,7 +78,7 @@ Request timeout in milliseconds. Defaults to 10000ms.
 
 > `optional` **onSuccess**: (`result`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L27)
+Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L27)
 
 Callback triggered when the request succeeds
 
@@ -100,7 +100,7 @@ The successful FetcherResult
 
 > `optional` **onError**: (`error`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L32)
+Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L32)
 
 Callback triggered when the request fails
 
@@ -122,7 +122,7 @@ The error details
 
 > `optional` **onLoadingChange**: (`isLoading`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/1c835c63b7707924681b2b1b0180419481b3938f/src/lib/fetcher/index.ts#L37)
+Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L37)
 
 Callback triggered when loading state changes
 
