@@ -1,7 +1,7 @@
 import { vi, describe, it, expect, beforeEach } from 'vitest';
-import { fetcher } from './fetcher';
+import { Fetcher } from './fetcher';
 
-describe('fetcher', () => {
+describe('Fetcher', () => {
   beforeEach(() => {
     globalThis.fetch = vi.fn();
   });
@@ -13,8 +13,9 @@ describe('fetcher', () => {
       json: async () => ({ data: 'test' }),
       headers: new Headers(),
     });
-    const result = await fetcher({ url: 'https://api.example.com' });
-    expect(result.success).toBe(true);
-    expect(result.data).toEqual({ data: 'test' });
+    const fetcher = new Fetcher({ url: 'https://api.example.com' });
+
+    expect(fetcher.result?.success).toBe(true);
+    expect(fetcher.result?.data).toEqual({ data: 'test' });
   })
 })

@@ -4,7 +4,10 @@
 
 # Interface: FetcherOptions\<T\>
 
-Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L22)
+Defined in: [src/lib/fetcher/index.ts:34](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L34)
+
+Configuration options for the Fetcher class.
+Extends FetchFnOptions with lifecycle callbacks and auto‑refetch control.
 
 ## Extends
 
@@ -22,9 +25,10 @@ Defined in: [src/lib/fetcher/index.ts:22](https://github.com/z-npm/utils/blob/6e
 
 > **url**: `string`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:22](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/fetchFn.ts#L22)
+Defined in: [src/lib/fetcher/fetchFn.ts:40](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/fetchFn.ts#L40)
 
-The URL to send the request to.
+The target URL for the request.
+Must be a valid absolute or relative URL (relative URLs are resolved against the base URL of the page in browser environments).
 
 #### Inherited from
 
@@ -36,9 +40,10 @@ The URL to send the request to.
 
 > `optional` **id**: `string`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:27](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/fetchFn.ts#L27)
+Defined in: [src/lib/fetcher/fetchFn.ts:46](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/fetchFn.ts#L46)
 
-Optional identifier for the request.
+An optional identifier for the request.
+Useful for correlating requests in batch operations or logging.
 
 #### Inherited from
 
@@ -50,9 +55,16 @@ Optional identifier for the request.
 
 > `optional` **responseType**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:32](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/fetchFn.ts#L32)
+Defined in: [src/lib/fetcher/fetchFn.ts:58](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/fetchFn.ts#L58)
 
-The expected response type. Defaults to 'json'.
+The expected response type, which determines how the response body is parsed.
+Defaults to `'json'`.
+
+- `'json'`: Parses as JSON (returns `null` for empty responses).
+- `'text'`: Returns the raw text.
+- `'blob'`: Returns a Blob object.
+- `'arrayBuffer'`: Returns an ArrayBuffer.
+- `'formData'`: Parses as FormData (useful for multipart responses).
 
 #### Inherited from
 
@@ -64,9 +76,11 @@ The expected response type. Defaults to 'json'.
 
 > `optional` **timeout**: `number`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:37](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/fetchFn.ts#L37)
+Defined in: [src/lib/fetcher/fetchFn.ts:65](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/fetchFn.ts#L65)
 
-Request timeout in milliseconds. Defaults to 10000ms.
+Request timeout in milliseconds.
+If the request takes longer than this value, it will be aborted and a `'timeout'` error is returned.
+Must be greater than 0. Defaults to `10000` (10 seconds).
 
 #### Inherited from
 
@@ -74,13 +88,25 @@ Request timeout in milliseconds. Defaults to 10000ms.
 
 ***
 
-### onSuccess()?
+### autoRefetch?
 
-> `optional` **onSuccess**: (`result`) => `void`
+> `optional` **autoRefetch**: `boolean`
 
-Defined in: [src/lib/fetcher/index.ts:27](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L27)
+Defined in: [src/lib/fetcher/index.ts:39](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L39)
 
-Callback triggered when the request succeeds
+Whether to automatically start the request upon instantiation.
+Defaults to `true`. Set to `false` if you want to manually call `reFetch()`.
+
+***
+
+### onResult()?
+
+> `optional` **onResult**: (`result`) => `void`
+
+Defined in: [src/lib/fetcher/index.ts:45](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L45)
+
+Callback triggered after every fetch completion, regardless of success or failure.
+Receives the full result object.
 
 #### Parameters
 
@@ -88,7 +114,26 @@ Callback triggered when the request succeeds
 
 `FetchFnResult`\<`T`\>
 
-The successful FetcherResult
+#### Returns
+
+`void`
+
+***
+
+### onSuccess()?
+
+> `optional` **onSuccess**: (`result`) => `void`
+
+Defined in: [src/lib/fetcher/index.ts:51](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L51)
+
+Callback triggered when the request succeeds.
+Receives the parsed response data.
+
+#### Parameters
+
+##### result
+
+`T`
 
 #### Returns
 
@@ -100,17 +145,16 @@ The successful FetcherResult
 
 > `optional` **onError**: (`error`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:32](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L32)
+Defined in: [src/lib/fetcher/index.ts:57](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L57)
 
-Callback triggered when the request fails
+Callback triggered when the request fails.
+Receives a normalized error object.
 
 #### Parameters
 
 ##### error
 
 [`FetcherError`](FetcherError.md)
-
-The error details
 
 #### Returns
 
@@ -122,17 +166,16 @@ The error details
 
 > `optional` **onLoadingChange**: (`isLoading`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:37](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L37)
+Defined in: [src/lib/fetcher/index.ts:63](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L63)
 
-Callback triggered when loading state changes
+Callback triggered when the loading state changes.
+Useful for showing/hiding loading indicators in UI.
 
 #### Parameters
 
 ##### isLoading
 
 `boolean`
-
-Current loading state
 
 #### Returns
 

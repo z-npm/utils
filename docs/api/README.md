@@ -18,7 +18,7 @@ Includes helpers for string manipulation, browser detection, and reactive progra
 - [unsafeHTML](functions/unsafeHTML.md)
 - [FetcherError](interfaces/FetcherError.md)
 - [FetcherOptions](interfaces/FetcherOptions.md)
-- [fetcher](functions/fetcher.md)
+- [Fetcher](classes/Fetcher.md)
 - [get](functions/get.md)
 - [post](functions/post.md)
 - [put](functions/put.md)

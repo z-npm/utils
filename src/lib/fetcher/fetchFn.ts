@@ -1,7 +1,23 @@
+/**
+ * Core HTTP request function with comprehensive error handling, timeout support,
+ * and automatic response parsing.
+ * 
+ * @module fetcher/fetchFn
+ */
+
 import { isValidUrl } from "../validate"
 
 /**
- * Possible reasons for request failure.
+ * Standardized error reasons returned by fetchFn.
+ * These allow consumers to handle specific failure types programmatically.
+ * 
+ * - `invalid-url`: The provided URL is malformed or empty.
+ * - `invalid-input`: An option (e.g., timeout) had an invalid value.
+ * - `timeout`: The request exceeded the specified timeout.
+ * - `http-error`: The server responded with a non-2xx status code.
+ * - `network-error`: A network-level failure (e.g., DNS, connection refused).
+ * - `parse-error`: Failed to parse the response body (e.g., invalid JSON).
+ * - `unknown-error`: An unexpected error not covered by the above.
  */
 export type FetchFnErrorReason =
   | 'invalid-url'
@@ -13,91 +29,105 @@ export type FetchFnErrorReason =
   | 'unknown-error'
 
 /**
- * Options for configuring the fetchFn function.
+ * Configuration options for fetchFn.
+ * Extends the native fetch RequestInit interface.
  */
 export interface FetchFnOptions extends RequestInit {
   /**
-   * The URL to send the request to.
+   * The target URL for the request.
+   * Must be a valid absolute or relative URL (relative URLs are resolved against the base URL of the page in browser environments).
    */
   url: string
 
   /**
-   * Optional identifier for the request.
+   * An optional identifier for the request.
+   * Useful for correlating requests in batch operations or logging.
    */
   id?: string
 
   /**
-   * The expected response type. Defaults to 'json'.
+   * The expected response type, which determines how the response body is parsed.
+   * Defaults to `'json'`.
+   * 
+   * - `'json'`: Parses as JSON (returns `null` for empty responses).
+   * - `'text'`: Returns the raw text.
+   * - `'blob'`: Returns a Blob object.
+   * - `'arrayBuffer'`: Returns an ArrayBuffer.
+   * - `'formData'`: Parses as FormData (useful for multipart responses).
    */
   responseType?: 'json' | 'text' | 'blob' | 'arrayBuffer' | 'formData'
 
   /**
-   * Request timeout in milliseconds. Defaults to 10000ms.
+   * Request timeout in milliseconds.
+   * If the request takes longer than this value, it will be aborted and a `'timeout'` error is returned.
+   * Must be greater than 0. Defaults to `10000` (10 seconds).
    */
   timeout?: number
 }
 
 /**
  * Represents the result of a fetchFn operation.
+ * All fields except `success` are optional and depend on the outcome.
  */
 export type FetchFnResult<T = any> = {
   /**
-   * Indicates whether the request was successful.
+   * Indicates whether the request completed successfully.
+   * `true` if the request succeeded and the response was parsed without errors.
    */
   success: boolean
 
   /**
-   * The response data if the request was successful.
+   * The parsed response data, present only when `success` is `true`.
+   * The type corresponds to the `responseType` option.
    */
   data?: T
 
   /**
-   * Error message if the request failed.
+   * A human-readable error message, present only when `success` is `false`.
    */
   error?: string
 
   /**
-   * A standardized reason for the failure.
+   * A machine-readable error reason, present only when `success` is `false`.
+   * Use this to implement specific error handling logic.
    */
   reason?: FetchFnErrorReason
 
   /**
-   * HTTP status code of the response.
+   * HTTP status code of the response, present when a response was received.
    */
   status?: number
 
   /**
-   * HTTP status text of the response.
+   * HTTP status text of the response, present when a response was received.
    */
   statusText?: string
 
   /**
-   * Response headers.
+   * Response headers, present when a response was received.
+   * Converted to a plain object for easier consumption.
    */
-  headers?: Headers
+  headers?: Record<string, string>
 
   /**
-   * The identifier associated with the request.
+   * The identifier passed in the options, if any.
    */
   id?: string
 }
 
 /**
- * Default timeout value in milliseconds.
+ * Default timeout value: 10 seconds.
  */
-const DEFAULT_TIMEOUT = 10000
+const DEFAULT_TIMEOUT = 10_000
 
 /**
- * List of HTTP status codes considered as valid responses.
- */
-const VALID_STATUS_CODES = [200, 201, 202, 204]
-
-/**
- * Parses the response based on the specified response type.
+ * Parses the response body according to the requested response type.
+ * Handles empty responses (204 No Content) gracefully.
  * 
- * @param response - The fetch API Response object.
- * @param responseType - The expected response type.
- * @returns The parsed response data.
+ * @param response - The fetch Response object.
+ * @param responseType - The desired parsing method.
+ * @returns The parsed data.
+ * @throws {TypeError} If parsing fails (e.g., invalid JSON).
  */
 const parseResponse = async (
   response: Response,
@@ -125,11 +155,43 @@ const parseResponse = async (
 }
 
 /**
- * Generic fetchFn function that handles HTTP requests with error handling, timeouts, and response parsing.
+ * A robust fetch wrapper with timeout, validation, and response parsing.
+ * 
+ * This function is used internally by the Fetcher class and can also be used directly
+ * when you need a promise-based fetch with automatic error categorization.
  * 
  * @template T - The expected type of the response data.
  * @param options - Configuration options for the request.
- * @returns A promise resolving to a FetcherResult object.
+ * @returns A promise that resolves to a normalized result object.
+ * 
+ * @example
+ * ```typescript
+ * import { fetchFn } from '@o.z/utils/fetcher/fetchFn'
+ * 
+ * const result = await fetchFn({
+ *   url: 'https://api.example.com/users/1',
+ *   method: 'GET',
+ *   timeout: 5000,
+ *   responseType: 'json',
+ * })
+ * 
+ * if (result.success) {
+ *   console.log('User:', result.data)
+ * } else {
+ *   console.error(`Failed (${result.reason}): ${result.error}`)
+ * }
+ * ```
+ * 
+ * @example with POST and custom headers
+ * ```typescript
+ * const result = await fetchFn({
+ *   url: 'https://api.example.com/users',
+ *   method: 'POST',
+ *   headers: { 'Content-Type': 'application/json' },
+ *   body: JSON.stringify({ name: 'New User' }),
+ *   responseType: 'json',
+ * })
+ * ```
  */
 export const fetchFn = async <T = any>(
   options: FetchFnOptions
@@ -184,11 +246,14 @@ export const fetchFn = async <T = any>(
     // Clear timeout upon successful fetch
     clearTimeout(timeoutId)
 
-    // Check for non-successful HTTP status codes outside the valid range
-    if (!response.ok && !VALID_STATUS_CODES.includes(response.status)) {
+    // Check for non-successful HTTP status codes
+    if (!response.ok) {
       return {
         success: false,
         error: `HTTP Error: ${response.status} ${response.statusText}`,
+        status: response.status,
+        statusText: response.statusText,
+        headers: Object.fromEntries(response.headers.entries()),
         reason: 'http-error',
         id
       }
@@ -202,7 +267,7 @@ export const fetchFn = async <T = any>(
       data,
       status: response.status,
       statusText: response.statusText,
-      headers: { ...response.headers },
+      headers: Object.fromEntries(response.headers.entries()),
       id
     }
 

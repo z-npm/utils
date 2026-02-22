@@ -4,11 +4,11 @@
 
 # Function: post()
 
-> **post**\<`T`\>(`url`, `options?`): `Promise`\<`FetchFnResult`\<`T`\>\>
+> **post**\<`T`\>(`url`, `options?`): [`Fetcher`](../classes/Fetcher.md)\<`T`\>
 
-Defined in: [src/lib/fetcher/index.ts:143](https://github.com/z-npm/utils/blob/6ec6794f65a0a1afe81fc8dc06e249b552d2c6e2/src/lib/fetcher/index.ts#L143)
+Defined in: [src/lib/fetcher/index.ts:275](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L275)
 
-Performs an HTTP POST request.
+Performs an HTTP POST request using a Web Worker.
 
 ## Type Parameters
 
@@ -24,16 +24,16 @@ The expected type of the response data.
 
 `string`
 
-The URL to send the request to.
+The endpoint URL.
 
 ### options?
 
 `Omit`\<`FetchFnOptions`, `"url"` \| `"method"`\>
 
-Additional options for the request.
+Additional fetch options (excluding `method` and `url`).
 
 ## Returns
 
-`Promise`\<`FetchFnResult`\<`T`\>\>
+[`Fetcher`](../classes/Fetcher.md)\<`T`\>
 
-A promise resolving to a FetcherResult object.
+A Fetcher instance.
