@@ -6,7 +6,7 @@
 
 > **del**\<`T`\>(`url`, `options?`): [`Fetcher`](../classes/Fetcher.md)\<`T`\>
 
-Defined in: [src/lib/fetcher/index.ts:309](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L309)
+Defined in: [src/lib/fetcher/index.ts:309](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L309)
 
 Performs an HTTP DELETE request using a Web Worker.
 

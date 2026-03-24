@@ -4,7 +4,7 @@
 
 # Interface: FetcherOptions\<T\>
 
-Defined in: [src/lib/fetcher/index.ts:34](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L34)
+Defined in: [src/lib/fetcher/index.ts:34](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L34)
 
 Configuration options for the Fetcher class.
 Extends FetchFnOptions with lifecycle callbacks and auto‑refetch control.
@@ -25,7 +25,7 @@ Extends FetchFnOptions with lifecycle callbacks and auto‑refetch control.
 
 > **url**: `string`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:40](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/fetchFn.ts#L40)
+Defined in: [src/lib/fetcher/fetchFn.ts:40](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/fetchFn.ts#L40)
 
 The target URL for the request.
 Must be a valid absolute or relative URL (relative URLs are resolved against the base URL of the page in browser environments).
@@ -38,9 +38,9 @@ Must be a valid absolute or relative URL (relative URLs are resolved against the
 
 ### id?
 
-> `optional` **id**: `string`
+> `optional` **id?**: `string`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:46](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/fetchFn.ts#L46)
+Defined in: [src/lib/fetcher/fetchFn.ts:46](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/fetchFn.ts#L46)
 
 An optional identifier for the request.
 Useful for correlating requests in batch operations or logging.
@@ -53,9 +53,9 @@ Useful for correlating requests in batch operations or logging.
 
 ### responseType?
 
-> `optional` **responseType**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
+> `optional` **responseType?**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:58](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/fetchFn.ts#L58)
+Defined in: [src/lib/fetcher/fetchFn.ts:58](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/fetchFn.ts#L58)
 
 The expected response type, which determines how the response body is parsed.
 Defaults to `'json'`.
@@ -74,9 +74,9 @@ Defaults to `'json'`.
 
 ### timeout?
 
-> `optional` **timeout**: `number`
+> `optional` **timeout?**: `number`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:65](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/fetchFn.ts#L65)
+Defined in: [src/lib/fetcher/fetchFn.ts:65](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/fetchFn.ts#L65)
 
 Request timeout in milliseconds.
 If the request takes longer than this value, it will be aborted and a `'timeout'` error is returned.
@@ -90,20 +90,20 @@ Must be greater than 0. Defaults to `10000` (10 seconds).
 
 ### autoRefetch?
 
-> `optional` **autoRefetch**: `boolean`
+> `optional` **autoRefetch?**: `boolean`
 
-Defined in: [src/lib/fetcher/index.ts:39](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L39)
+Defined in: [src/lib/fetcher/index.ts:39](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L39)
 
 Whether to automatically start the request upon instantiation.
 Defaults to `true`. Set to `false` if you want to manually call `reFetch()`.
 
 ***
 
-### onResult()?
+### onResult?
 
-> `optional` **onResult**: (`result`) => `void`
+> `optional` **onResult?**: (`result`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:45](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L45)
+Defined in: [src/lib/fetcher/index.ts:45](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L45)
 
 Callback triggered after every fetch completion, regardless of success or failure.
 Receives the full result object.
@@ -120,11 +120,11 @@ Receives the full result object.
 
 ***
 
-### onSuccess()?
+### onSuccess?
 
-> `optional` **onSuccess**: (`result`) => `void`
+> `optional` **onSuccess?**: (`result`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:51](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L51)
+Defined in: [src/lib/fetcher/index.ts:51](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L51)
 
 Callback triggered when the request succeeds.
 Receives the parsed response data.
@@ -141,11 +141,11 @@ Receives the parsed response data.
 
 ***
 
-### onError()?
+### onError?
 
-> `optional` **onError**: (`error`) => `void`
+> `optional` **onError?**: (`error`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:57](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L57)
+Defined in: [src/lib/fetcher/index.ts:57](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L57)
 
 Callback triggered when the request fails.
 Receives a normalized error object.
@@ -162,11 +162,11 @@ Receives a normalized error object.
 
 ***
 
-### onLoadingChange()?
+### onLoadingChange?
 
-> `optional` **onLoadingChange**: (`isLoading`) => `void`
+> `optional` **onLoadingChange?**: (`isLoading`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:63](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L63)
+Defined in: [src/lib/fetcher/index.ts:63](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L63)
 
 Callback triggered when the loading state changes.
 Useful for showing/hiding loading indicators in UI.
@@ -185,9 +185,9 @@ Useful for showing/hiding loading indicators in UI.
 
 ### body?
 
-> `optional` **body**: `BodyInit` \| `null`
+> `optional` **body?**: `BodyInit` \| `null`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2041
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2554
 
 A BodyInit object or null to set request's body.
 
@@ -199,9 +199,9 @@ A BodyInit object or null to set request's body.
 
 ### cache?
 
-> `optional` **cache**: `RequestCache`
+> `optional` **cache?**: `RequestCache`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2043
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2556
 
 A string indicating how the request will interact with the browser's cache to set request's cache.
 
@@ -213,9 +213,9 @@ A string indicating how the request will interact with the browser's cache to se
 
 ### credentials?
 
-> `optional` **credentials**: `RequestCredentials`
+> `optional` **credentials?**: `RequestCredentials`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2045
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2558
 
 A string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. Sets request's credentials.
 
@@ -227,9 +227,9 @@ A string indicating whether credentials will be sent with the request always, ne
 
 ### headers?
 
-> `optional` **headers**: `HeadersInit`
+> `optional` **headers?**: `HeadersInit`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2047
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2560
 
 A Headers object, an object literal, or an array of two-item arrays to set request's headers.
 
@@ -241,9 +241,9 @@ A Headers object, an object literal, or an array of two-item arrays to set reque
 
 ### integrity?
 
-> `optional` **integrity**: `string`
+> `optional` **integrity?**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2049
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2562
 
 A cryptographic hash of the resource to be fetched by request. Sets request's integrity.
 
@@ -255,9 +255,9 @@ A cryptographic hash of the resource to be fetched by request. Sets request's in
 
 ### keepalive?
 
-> `optional` **keepalive**: `boolean`
+> `optional` **keepalive?**: `boolean`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2051
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2564
 
 A boolean to set request's keepalive.
 
@@ -269,9 +269,9 @@ A boolean to set request's keepalive.
 
 ### method?
 
-> `optional` **method**: `string`
+> `optional` **method?**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2053
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2566
 
 A string to set request's method.
 
@@ -283,9 +283,9 @@ A string to set request's method.
 
 ### mode?
 
-> `optional` **mode**: `RequestMode`
+> `optional` **mode?**: `RequestMode`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2055
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2568
 
 A string to indicate whether the request will use CORS, or will be restricted to same-origin URLs. Sets request's mode.
 
@@ -297,9 +297,9 @@ A string to indicate whether the request will use CORS, or will be restricted to
 
 ### priority?
 
-> `optional` **priority**: `RequestPriority`
+> `optional` **priority?**: `RequestPriority`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2056
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2569
 
 #### Inherited from
 
@@ -309,9 +309,9 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2056
 
 ### redirect?
 
-> `optional` **redirect**: `RequestRedirect`
+> `optional` **redirect?**: `RequestRedirect`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2058
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2571
 
 A string indicating whether request follows redirects, results in an error upon encountering a redirect, or returns the redirect (in an opaque fashion). Sets request's redirect.
 
@@ -323,9 +323,9 @@ A string indicating whether request follows redirects, results in an error upon 
 
 ### referrer?
 
-> `optional` **referrer**: `string`
+> `optional` **referrer?**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2060
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2573
 
 A string whose value is a same-origin URL, "about:client", or the empty string, to set request's referrer.
 
@@ -337,9 +337,9 @@ A string whose value is a same-origin URL, "about:client", or the empty string, 
 
 ### referrerPolicy?
 
-> `optional` **referrerPolicy**: `ReferrerPolicy`
+> `optional` **referrerPolicy?**: `ReferrerPolicy`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2062
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2575
 
 A referrer policy to set request's referrerPolicy.
 
@@ -351,9 +351,9 @@ A referrer policy to set request's referrerPolicy.
 
 ### signal?
 
-> `optional` **signal**: `AbortSignal` \| `null`
+> `optional` **signal?**: `AbortSignal` \| `null`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2064
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2577
 
 An AbortSignal to set request's signal.
 
@@ -365,9 +365,9 @@ An AbortSignal to set request's signal.
 
 ### window?
 
-> `optional` **window**: `null`
+> `optional` **window?**: `null`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2066
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2579
 
 Can only be null. Used to disassociate request from any Window.
 

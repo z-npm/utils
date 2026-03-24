@@ -6,7 +6,7 @@
 
 > **html**(`strings`, ...`values`): [`SafeHTML`](../classes/SafeHTML.md)
 
-Defined in: [src/lib/dom/html.ts:97](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/dom/html.ts#L97)
+Defined in: [src/lib/dom/html.ts:97](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/dom/html.ts#L97)
 
 A tagged template literal for safely generating HTML strings.
 

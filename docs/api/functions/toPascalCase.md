@@ -6,7 +6,7 @@
 
 > **toPascalCase**(`str`): `string`
 
-Defined in: [src/lib/string/index.ts:77](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/string/index.ts#L77)
+Defined in: [src/lib/string/index.ts:77](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/string/index.ts#L77)
 
 Converts a string to PascalCase.
 

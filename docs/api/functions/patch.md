@@ -6,7 +6,7 @@
 
 > **patch**\<`T`\>(`url`, `body?`, `options?`): [`Fetcher`](../classes/Fetcher.md)\<`T`\>
 
-Defined in: [src/lib/fetcher/index.ts:298](https://github.com/z-npm/utils/blob/100b7684e7ee7f3d203edcd3731baa640a9bc023/src/lib/fetcher/index.ts#L298)
+Defined in: [src/lib/fetcher/index.ts:298](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L298)
 
 Performs an HTTP PATCH request using a Web Worker.
 
