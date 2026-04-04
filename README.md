@@ -1,7 +1,7 @@
 # @o.z/utils ⚡
 [![npm version](https://img.shields.io/npm/v/@o.z/utils?style=flat-square)](https://www.npmjs.com/package/@o.z/utils)
 [![license](https://img.shields.io/npm/l/@o.z/utils?style=flat-square)](https://www.npmjs.com/package/@o.z/utils)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0+-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/z-npm/utils/pulls)
 
 A comprehensive, modular utility library for modern JavaScript/TypeScript development.
