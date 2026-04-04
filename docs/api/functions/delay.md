@@ -6,7 +6,7 @@
 
 > **delay**(`ms`): `Promise`\<`unknown`\>
 
-Defined in: [src/lib/task/index.ts:18](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/task/index.ts#L18)
+Defined in: [src/lib/task/index.ts:18](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/task/index.ts#L18)
 
 Creates a promise that resolves after a specified delay.
 

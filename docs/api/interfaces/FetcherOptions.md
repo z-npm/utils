@@ -4,7 +4,7 @@
 
 # Interface: FetcherOptions\<T\>
 
-Defined in: [src/lib/fetcher/index.ts:34](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L34)
+Defined in: [src/lib/fetcher/index.ts:34](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/index.ts#L34)
 
 Configuration options for the Fetcher class.
 Extends FetchFnOptions with lifecycle callbacks and auto‑refetch control.
@@ -25,7 +25,7 @@ Extends FetchFnOptions with lifecycle callbacks and auto‑refetch control.
 
 > **url**: `string`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:40](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/fetchFn.ts#L40)
+Defined in: [src/lib/fetcher/fetchFn.ts:40](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/fetchFn.ts#L40)
 
 The target URL for the request.
 Must be a valid absolute or relative URL (relative URLs are resolved against the base URL of the page in browser environments).
@@ -40,7 +40,7 @@ Must be a valid absolute or relative URL (relative URLs are resolved against the
 
 > `optional` **id?**: `string`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:46](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/fetchFn.ts#L46)
+Defined in: [src/lib/fetcher/fetchFn.ts:46](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/fetchFn.ts#L46)
 
 An optional identifier for the request.
 Useful for correlating requests in batch operations or logging.
@@ -55,7 +55,7 @@ Useful for correlating requests in batch operations or logging.
 
 > `optional` **responseType?**: `"json"` \| `"text"` \| `"blob"` \| `"arrayBuffer"` \| `"formData"`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:58](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/fetchFn.ts#L58)
+Defined in: [src/lib/fetcher/fetchFn.ts:58](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/fetchFn.ts#L58)
 
 The expected response type, which determines how the response body is parsed.
 Defaults to `'json'`.
@@ -76,7 +76,7 @@ Defaults to `'json'`.
 
 > `optional` **timeout?**: `number`
 
-Defined in: [src/lib/fetcher/fetchFn.ts:65](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/fetchFn.ts#L65)
+Defined in: [src/lib/fetcher/fetchFn.ts:65](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/fetchFn.ts#L65)
 
 Request timeout in milliseconds.
 If the request takes longer than this value, it will be aborted and a `'timeout'` error is returned.
@@ -92,7 +92,7 @@ Must be greater than 0. Defaults to `10000` (10 seconds).
 
 > `optional` **autoRefetch?**: `boolean`
 
-Defined in: [src/lib/fetcher/index.ts:39](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L39)
+Defined in: [src/lib/fetcher/index.ts:39](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/index.ts#L39)
 
 Whether to automatically start the request upon instantiation.
 Defaults to `true`. Set to `false` if you want to manually call `reFetch()`.
@@ -103,7 +103,7 @@ Defaults to `true`. Set to `false` if you want to manually call `reFetch()`.
 
 > `optional` **onResult?**: (`result`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:45](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L45)
+Defined in: [src/lib/fetcher/index.ts:45](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/index.ts#L45)
 
 Callback triggered after every fetch completion, regardless of success or failure.
 Receives the full result object.
@@ -124,7 +124,7 @@ Receives the full result object.
 
 > `optional` **onSuccess?**: (`result`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:51](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L51)
+Defined in: [src/lib/fetcher/index.ts:51](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/index.ts#L51)
 
 Callback triggered when the request succeeds.
 Receives the parsed response data.
@@ -145,7 +145,7 @@ Receives the parsed response data.
 
 > `optional` **onError?**: (`error`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:57](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L57)
+Defined in: [src/lib/fetcher/index.ts:57](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/index.ts#L57)
 
 Callback triggered when the request fails.
 Receives a normalized error object.
@@ -166,7 +166,7 @@ Receives a normalized error object.
 
 > `optional` **onLoadingChange?**: (`isLoading`) => `void`
 
-Defined in: [src/lib/fetcher/index.ts:63](https://github.com/z-npm/utils/blob/f0f952b16f26e3da8f57a50970594db02549d386/src/lib/fetcher/index.ts#L63)
+Defined in: [src/lib/fetcher/index.ts:63](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/index.ts#L63)
 
 Callback triggered when the loading state changes.
 Useful for showing/hiding loading indicators in UI.
