@@ -6,9 +6,10 @@
 
 > **isValidEmail**(`email`): `boolean`
 
-Defined in: [src/lib/validate/index.ts:43](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/validate/index.ts#L43)
+Defined in: [src/lib/validate/index.ts:28](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/validate/index.ts#L28)
 
-Validates email address.
+Checks if a string is a valid email address.
+Uses a standard regex pattern suitable for most common cases.
 
 ## Parameters
 
@@ -16,17 +17,10 @@ Validates email address.
 
 `string`
 
-Email string to validate
+The email string to validate.
 
 ## Returns
 
 `boolean`
 
-true if valid email, false otherwise
-
-## Example
-
-```typescript
-isValidEmail('user@example.com') // true
-isValidEmail('invalid-email') // false
-```
+`true` if valid, otherwise `false`.

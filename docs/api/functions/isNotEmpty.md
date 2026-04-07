@@ -6,31 +6,22 @@
 
 > **isNotEmpty**(`value`): `boolean`
 
-Defined in: [src/lib/validate/index.ts:70](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/validate/index.ts#L70)
+Defined in: [src/lib/validate/index.ts:41](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/validate/index.ts#L41)
 
-Validates that a value is not empty.
+Checks if a value is not empty.
+Handles strings, arrays, maps, sets, objects, dates, and primitives.
+Note: `0` and `false` are considered non-empty.
 
 ## Parameters
 
 ### value
 
-`any`
+`unknown`
 
-Value to validate
+The value to check.
 
 ## Returns
 
 `boolean`
 
-true if not empty, false otherwise
-
-## Example
-
-```typescript
-isNotEmpty('hello') // true
-isNotEmpty('') // false
-isNotEmpty(null) // false
-isNotEmpty(undefined) // false
-isNotEmpty([]) // false
-isNotEmpty({}) // false
-```
+`true` if not empty, otherwise `false`.

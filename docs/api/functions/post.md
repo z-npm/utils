@@ -6,7 +6,7 @@
 
 > **post**\<`T`\>(`url`, `options?`): [`Fetcher`](../classes/Fetcher.md)\<`T`\>
 
-Defined in: [src/lib/fetcher/index.ts:275](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/fetcher/index.ts#L275)
+Defined in: [src/lib/fetcher/index.ts:275](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L275)
 
 Performs an HTTP POST request using a Web Worker.
 

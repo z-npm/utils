@@ -9,10 +9,21 @@
 General utility functions.
 Includes helpers for string manipulation, browser detection, and reactive programming.
 
+## DOM
+
+- [elementToStr](functions/elementToStr.md)
+
 ## Other
 
 - [isBrowser](variables/isBrowser.md)
 - [createElement](functions/createElement.md)
+- [StringType](interfaces/StringType.md)
+- [NumberType](interfaces/NumberType.md)
+- [ChooseType](interfaces/ChooseType.md)
+- [BooleanType](interfaces/BooleanType.md)
+- [ElementType](type-aliases/ElementType.md)
+- [FormValueMap](type-aliases/FormValueMap.md)
+- [FormElementFactory](classes/FormElementFactory.md)
 - [SafeHTML](classes/SafeHTML.md)
 - [html](functions/html.md)
 - [unsafeHTML](functions/unsafeHTML.md)
@@ -26,6 +37,19 @@ Includes helpers for string manipulation, browser detection, and reactive progra
 - [del](functions/del.md)
 - [batchFetch](functions/batchFetch.md)
 - [delay](functions/delay.md)
+- [isValidUrl](functions/isValidUrl.md)
+- [isValidEmail](functions/isValidEmail.md)
+- [isNotEmpty](functions/isNotEmpty.md)
+- [isDigit](functions/isDigit.md)
+- [isAlphabetic](functions/isAlphabetic.md)
+- [isAlphanumeric](functions/isAlphanumeric.md)
+- [isWhitespace](functions/isWhitespace.md)
+- [isBoolean](functions/isBoolean.md)
+- [isNumber](functions/isNumber.md)
+- [isString](functions/isString.md)
+- [isPlainObject](functions/isPlainObject.md)
+- [isArray](variables/isArray.md)
+- [isFunction](functions/isFunction.md)
 
 ## Reactivity
 
@@ -37,9 +61,3 @@ Includes helpers for string manipulation, browser detection, and reactive progra
 - [toCamelCase](functions/toCamelCase.md)
 - [toPascalCase](functions/toPascalCase.md)
 - [truncate](functions/truncate.md)
-
-## Validation
-
-- [isValidUrl](functions/isValidUrl.md)
-- [isValidEmail](functions/isValidEmail.md)
-- [isNotEmpty](functions/isNotEmpty.md)

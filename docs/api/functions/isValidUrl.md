@@ -6,9 +6,9 @@
 
 > **isValidUrl**(`urlString`): `boolean`
 
-Defined in: [src/lib/validate/index.ts:17](https://github.com/z-npm/utils/blob/f224557df6dd590f0d1041696d684e879244dfe4/src/lib/validate/index.ts#L17)
+Defined in: [src/lib/validate/index.ts:12](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/validate/index.ts#L12)
 
-Validates URL string.
+Checks if a string is a valid URL.
 
 ## Parameters
 
@@ -16,18 +16,10 @@ Validates URL string.
 
 `string`
 
-URL string to validate
+The URL string to validate.
 
 ## Returns
 
 `boolean`
 
-true if valid URL, false otherwise
-
-## Example
-
-```typescript
-isValidUrl('https://example.com') // true
-isValidUrl('not-a-url') // false
-isValidUrl('') // false
-```
+`true` if valid, otherwise `false`.
