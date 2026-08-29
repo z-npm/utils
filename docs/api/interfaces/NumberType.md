@@ -4,7 +4,7 @@
 
 # Interface: NumberType
 
-Defined in: src/lib/dom/form.ts:36
+Defined in: [src/lib/dom/form.ts:36](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L36)
 
 Configuration for a numeric input.
 
@@ -18,7 +18,7 @@ Configuration for a numeric input.
 
 > `optional` **id?**: `string`
 
-Defined in: src/lib/dom/form.ts:17
+Defined in: [src/lib/dom/form.ts:17](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L17)
 
 Unique identifier for the element (maps to `id` attribute).
 
@@ -32,7 +32,7 @@ Unique identifier for the element (maps to `id` attribute).
 
 > `optional` **name?**: `string`
 
-Defined in: src/lib/dom/form.ts:19
+Defined in: [src/lib/dom/form.ts:19](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L19)
 
 Name attribute for form submission.
 
@@ -46,7 +46,7 @@ Name attribute for form submission.
 
 > `optional` **label?**: `string`
 
-Defined in: src/lib/dom/form.ts:21
+Defined in: [src/lib/dom/form.ts:21](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L21)
 
 Label text displayed before the input.
 
@@ -60,7 +60,7 @@ Label text displayed before the input.
 
 > `optional` **disabled?**: `boolean`
 
-Defined in: src/lib/dom/form.ts:23
+Defined in: [src/lib/dom/form.ts:23](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L23)
 
 Whether the element is disabled and un-editable.
 
@@ -74,7 +74,7 @@ Whether the element is disabled and un-editable.
 
 > `optional` **placeholder?**: `string`
 
-Defined in: src/lib/dom/form.ts:25
+Defined in: [src/lib/dom/form.ts:25](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L25)
 
 Placeholder text for input elements.
 
@@ -88,7 +88,7 @@ Placeholder text for input elements.
 
 > **type**: `"number"`
 
-Defined in: src/lib/dom/form.ts:37
+Defined in: [src/lib/dom/form.ts:37](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L37)
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: src/lib/dom/form.ts:37
 
 > `optional` **value?**: `number`
 
-Defined in: src/lib/dom/form.ts:39
+Defined in: [src/lib/dom/form.ts:39](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L39)
 
 Initial value of the input.
 
@@ -106,7 +106,7 @@ Initial value of the input.
 
 > `optional` **min?**: `number`
 
-Defined in: src/lib/dom/form.ts:41
+Defined in: [src/lib/dom/form.ts:41](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L41)
 
 Minimum allowed value.
 
@@ -116,6 +116,6 @@ Minimum allowed value.
 
 > `optional` **max?**: `number`
 
-Defined in: src/lib/dom/form.ts:43
+Defined in: [src/lib/dom/form.ts:43](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L43)
 
 Maximum allowed value.

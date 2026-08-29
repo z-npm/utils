@@ -6,7 +6,7 @@
 
 > **batchFetch**\<`T`\>(`requests`): `Promise`\<`PromiseSettledResult`\<[`Fetcher`](../classes/Fetcher.md)\<`T`\>\>[]\>
 
-Defined in: [src/lib/fetcher/index.ts:332](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L332)
+Defined in: [src/lib/fetcher/index.ts:332](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L332)
 
 Executes multiple fetch requests concurrently.
 Each request runs in its own Web Worker.

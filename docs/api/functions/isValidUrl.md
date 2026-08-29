@@ -6,7 +6,7 @@
 
 > **isValidUrl**(`urlString`): `boolean`
 
-Defined in: [src/lib/validate/index.ts:12](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/validate/index.ts#L12)
+Defined in: [src/lib/validate/index.ts:12](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/validate/index.ts#L12)
 
 Checks if a string is a valid URL.
 

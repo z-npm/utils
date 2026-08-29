@@ -4,7 +4,7 @@
 
 # Class: Fetcher\<T\>
 
-Defined in: [src/lib/fetcher/index.ts:104](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L104)
+Defined in: [src/lib/fetcher/index.ts:104](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L104)
 
 A class that performs HTTP requests using a Web Worker, keeping the main thread free.
 
@@ -31,6 +31,8 @@ users.reFetch()
 console.log(users.isLoading, users.value)
 ```
 
+**with autoRefetch disabled**
+
 ```typescript
 const fetcher = new Fetcher({
   url: 'https://api.example.com/data',
@@ -55,7 +57,7 @@ The expected type of the response data.
 
 > **new Fetcher**\<`T`\>(`options`): `Fetcher`\<`T`\>
 
-Defined in: [src/lib/fetcher/index.ts:172](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L172)
+Defined in: [src/lib/fetcher/index.ts:172](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L172)
 
 Creates a new Fetcher instance.
 
@@ -79,7 +81,7 @@ Configuration options including URL, callbacks, and fetch settings.
 
 > **get** **value**(): `T` \| `undefined`
 
-Defined in: [src/lib/fetcher/index.ts:113](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L113)
+Defined in: [src/lib/fetcher/index.ts:113](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L113)
 
 The latest successfully fetched data.
 Undefined until the first successful request.
@@ -96,7 +98,7 @@ Undefined until the first successful request.
 
 > **get** **result**(): `FetchFnResult`\<`T`\> \| `undefined`
 
-Defined in: [src/lib/fetcher/index.ts:122](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L122)
+Defined in: [src/lib/fetcher/index.ts:122](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L122)
 
 The raw result object from the most recent request.
 Contains both success/failure details.
@@ -113,7 +115,7 @@ Contains both success/failure details.
 
 > **get** **error**(): [`FetcherError`](../interfaces/FetcherError.md) \| `undefined`
 
-Defined in: [src/lib/fetcher/index.ts:131](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L131)
+Defined in: [src/lib/fetcher/index.ts:131](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L131)
 
 The latest error object, if the last request failed.
 Undefined if the last request succeeded or no request has been made.
@@ -130,7 +132,7 @@ Undefined if the last request succeeded or no request has been made.
 
 > **get** **isLoading**(): `boolean` \| `undefined`
 
-Defined in: [src/lib/fetcher/index.ts:139](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L139)
+Defined in: [src/lib/fetcher/index.ts:139](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L139)
 
 Whether a request is currently in progress.
 
@@ -146,7 +148,7 @@ Whether a request is currently in progress.
 
 > **set** **onResult**(`onResult`): `void`
 
-Defined in: [src/lib/fetcher/index.ts:145](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L145)
+Defined in: [src/lib/fetcher/index.ts:145](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L145)
 
 Set a callback to be invoked after every request completion.
 
@@ -168,7 +170,7 @@ Set a callback to be invoked after every request completion.
 
 > **set** **onSuccess**(`onSuccess`): `void`
 
-Defined in: [src/lib/fetcher/index.ts:151](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L151)
+Defined in: [src/lib/fetcher/index.ts:151](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L151)
 
 Set a callback to be invoked after a successful request.
 
@@ -190,7 +192,7 @@ Set a callback to be invoked after a successful request.
 
 > **set** **onError**(`onError`): `void`
 
-Defined in: [src/lib/fetcher/index.ts:157](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L157)
+Defined in: [src/lib/fetcher/index.ts:157](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L157)
 
 Set a callback to be invoked after a failed request.
 
@@ -212,7 +214,7 @@ Set a callback to be invoked after a failed request.
 
 > **set** **onLoadingChange**(`onLoadingChange`): `void`
 
-Defined in: [src/lib/fetcher/index.ts:163](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L163)
+Defined in: [src/lib/fetcher/index.ts:163](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L163)
 
 Set a callback to be invoked when loading state changes.
 
@@ -232,7 +234,7 @@ Set a callback to be invoked when loading state changes.
 
 > **reFetch**(): `void`
 
-Defined in: [src/lib/fetcher/index.ts:187](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L187)
+Defined in: [src/lib/fetcher/index.ts:187](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L187)
 
 Initiates the request (or re‑request). Called automatically if `autoRefetch` is true.
 Can be called manually at any time to trigger a new fetch.

@@ -6,7 +6,7 @@
 
 > **get**\<`T`\>(`url`, `options?`): [`Fetcher`](../classes/Fetcher.md)\<`T`\>
 
-Defined in: [src/lib/fetcher/index.ts:264](https://github.com/z-npm/utils/blob/5ed1fed1d17df76dca368feb4bb48013d9e69a97/src/lib/fetcher/index.ts#L264)
+Defined in: [src/lib/fetcher/index.ts:264](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/fetcher/index.ts#L264)
 
 Performs an HTTP GET request using a Web Worker.
 Returns a Fetcher instance that starts the request immediately.

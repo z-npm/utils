@@ -4,7 +4,7 @@
 
 # Class: FormElementFactory
 
-Defined in: src/lib/dom/form.ts:89
+Defined in: [src/lib/dom/form.ts:89](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L89)
 
 Factory class to create DOM form elements from a configuration object.
 
@@ -37,7 +37,7 @@ document.body.appendChild(nameInput);
 
 > `static` **create**(`config`): `HTMLElement`
 
-Defined in: src/lib/dom/form.ts:99
+Defined in: [src/lib/dom/form.ts:99](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L99)
 
 Creates a DOM form element based on the provided configuration.
 Returns a wrapper `div` with the class `form-group` containing

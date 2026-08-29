@@ -6,7 +6,7 @@
 
 > **elementToStr**(`element`): `string`
 
-Defined in: src/lib/dom/convert.ts:37
+Defined in: [src/lib/dom/convert.ts:37](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/convert.ts#L37)
 
 Converts an HTML, SVG, or Template element to its string representation.
 

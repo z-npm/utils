@@ -4,7 +4,7 @@
 
 # Interface: ChooseType
 
-Defined in: src/lib/dom/form.ts:47
+Defined in: [src/lib/dom/form.ts:47](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L47)
 
 Configuration for a selection dropdown (`<select>`).
 
@@ -18,7 +18,7 @@ Configuration for a selection dropdown (`<select>`).
 
 > `optional` **id?**: `string`
 
-Defined in: src/lib/dom/form.ts:17
+Defined in: [src/lib/dom/form.ts:17](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L17)
 
 Unique identifier for the element (maps to `id` attribute).
 
@@ -32,7 +32,7 @@ Unique identifier for the element (maps to `id` attribute).
 
 > `optional` **name?**: `string`
 
-Defined in: src/lib/dom/form.ts:19
+Defined in: [src/lib/dom/form.ts:19](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L19)
 
 Name attribute for form submission.
 
@@ -46,7 +46,7 @@ Name attribute for form submission.
 
 > `optional` **label?**: `string`
 
-Defined in: src/lib/dom/form.ts:21
+Defined in: [src/lib/dom/form.ts:21](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L21)
 
 Label text displayed before the input.
 
@@ -60,7 +60,7 @@ Label text displayed before the input.
 
 > `optional` **disabled?**: `boolean`
 
-Defined in: src/lib/dom/form.ts:23
+Defined in: [src/lib/dom/form.ts:23](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L23)
 
 Whether the element is disabled and un-editable.
 
@@ -74,7 +74,7 @@ Whether the element is disabled and un-editable.
 
 > **type**: `"choose"`
 
-Defined in: src/lib/dom/form.ts:48
+Defined in: [src/lib/dom/form.ts:48](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L48)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: src/lib/dom/form.ts:48
 
 > `optional` **value?**: `string` \| `number`
 
-Defined in: src/lib/dom/form.ts:50
+Defined in: [src/lib/dom/form.ts:50](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L50)
 
 Initial selected value.
 
@@ -92,7 +92,7 @@ Initial selected value.
 
 > **options**: `object`[]
 
-Defined in: src/lib/dom/form.ts:52
+Defined in: [src/lib/dom/form.ts:52](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L52)
 
 List of options to populate the dropdown.
 

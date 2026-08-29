@@ -4,7 +4,7 @@
 
 # Interface: StringType
 
-Defined in: src/lib/dom/form.ts:29
+Defined in: [src/lib/dom/form.ts:29](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L29)
 
 Configuration for a string text input.
 
@@ -18,7 +18,7 @@ Configuration for a string text input.
 
 > `optional` **id?**: `string`
 
-Defined in: src/lib/dom/form.ts:17
+Defined in: [src/lib/dom/form.ts:17](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L17)
 
 Unique identifier for the element (maps to `id` attribute).
 
@@ -32,7 +32,7 @@ Unique identifier for the element (maps to `id` attribute).
 
 > `optional` **name?**: `string`
 
-Defined in: src/lib/dom/form.ts:19
+Defined in: [src/lib/dom/form.ts:19](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L19)
 
 Name attribute for form submission.
 
@@ -46,7 +46,7 @@ Name attribute for form submission.
 
 > `optional` **label?**: `string`
 
-Defined in: src/lib/dom/form.ts:21
+Defined in: [src/lib/dom/form.ts:21](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L21)
 
 Label text displayed before the input.
 
@@ -60,7 +60,7 @@ Label text displayed before the input.
 
 > `optional` **disabled?**: `boolean`
 
-Defined in: src/lib/dom/form.ts:23
+Defined in: [src/lib/dom/form.ts:23](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L23)
 
 Whether the element is disabled and un-editable.
 
@@ -74,7 +74,7 @@ Whether the element is disabled and un-editable.
 
 > `optional` **placeholder?**: `string`
 
-Defined in: src/lib/dom/form.ts:25
+Defined in: [src/lib/dom/form.ts:25](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L25)
 
 Placeholder text for input elements.
 
@@ -88,7 +88,7 @@ Placeholder text for input elements.
 
 > **type**: `"string"`
 
-Defined in: src/lib/dom/form.ts:30
+Defined in: [src/lib/dom/form.ts:30](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L30)
 
 ***
 
@@ -96,6 +96,6 @@ Defined in: src/lib/dom/form.ts:30
 
 > `optional` **value?**: `string`
 
-Defined in: src/lib/dom/form.ts:32
+Defined in: [src/lib/dom/form.ts:32](https://github.com/z-npm/utils/blob/bf3d7ade0aba0810622fac861b461f1b1a97d592/src/lib/dom/form.ts#L32)
 
 Initial value of the input.
